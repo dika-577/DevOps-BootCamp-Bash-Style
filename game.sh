@@ -22,7 +22,7 @@ do
        break
     done 
     for i in {1..10}; do
-        a[$i]=$i
+        a[i]=$i
         echo -e "${a[*]} " 
     done
     read -r -t 5 -p "Enter the index of your number: " p
@@ -32,7 +32,7 @@ do
     fi
     if [ "${r[x-1]}" -eq "$p" ]; then 
         echo "Great"
-        p=$((p+1))
+        p=$(p+1)
     else
         c=1
     fi
