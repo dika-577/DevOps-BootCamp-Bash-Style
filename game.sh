@@ -26,11 +26,7 @@ do
         echo -e "${a[*]} " 
     done
     read -r -t 5 -p "Enter the index of your number: " p
-    echo "$?"
- #   echo "$r[$(($x-1))]"
-    echo "$c -1"
-    echo "Dika"
-    echo "$r"
+ 
     if [[ "$?" -gt 128 ]]; then
         c=1
     fi
